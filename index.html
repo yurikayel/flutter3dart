@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dart 3 Flutter 3.10 Break Changes</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#🚧-flutter-3-mudanças-🚧">🚧 Flutter 3 Mudanças 🚧</a>
+<ul>
+<li><a href="#flutter-🚨🚧">Flutter 🚨🚧</a></li>
+<li><a href="#dart-🚨🚧">Dart 🚨🚧</a></li>
+</ul>
+</li>
+<li><a href="#🌐-web-e-desktop">🌐 Web e Desktop</a>
+<ul>
+<li><a href="#flutter-web-🌐">Flutter Web 🌐</a></li>
+<li><a href="#flutter-desktop-🖥️">Flutter Desktop 🖥️</a></li>
+</ul>
+</li>
+<li><a href="#📚-recursos-de-aprendizado">📚 Recursos de Aprendizado</a>
+<ul>
+<li><a href="#documentação-oficial">Documentação Oficial</a></li>
+<li><a href="#flutter-explained">Flutter Explained</a></li>
+<li><a href="#dart-academy">Dart Academy</a></li>
+<li><a href="#flutter-community">Flutter Community</a></li>
+<li><a href="#livros-e-cursos">Livros e Cursos</a></li>
+</ul>
+</li>
+<li><a href="#🚀-vamos-em-frente">🚀 Vamos em Frente</a></li>
+<li><a href="#👨‍💻-bora-codar-📜🤖">👨‍💻 Bora codar! 📜🤖</a></li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="🚧-flutter-3-mudanças-🚧">🚧 <strong>Flutter 3 Mudanças</strong> 🚧</h1>
+<h2 id="flutter-🚨🚧">Flutter 🚨🚧</h2>
+<p>Traz várias mudanças e melhorias significativas para o framework. Aqui estão algumas das principais mudanças no Flutter 3.10 que podem afetar a compatibilidade com versões anteriores:</p>
+<h3 id="aprimoramentos-na-biblioteca-cupertino-🍏">1. <strong>Aprimoramentos na Biblioteca Cupertino</strong> 🍏:</h3>
+<p>O Flutter 3.10 introduz a adição dos widgets 📦 <code>CupertinoCheckBox</code> e <code>CupertinoRadio</code> à biblioteca Cupertino. Esses widgets seguem as diretrizes de estilo da Apple para ✔️ caixas de seleção e botões de rádio, proporcionando uma aparência consistente em dispositivos iOS. Além disso, os widgets de caixa de seleção e botão de rádio do Material agora possuem construtores <code>.adaptive</code>, permitindo que eles alterem dinamicamente entre widgets Cupertino e Material com base na plataforma. [<a href="https://blog.flutter.wtf/flutter-at-google-io-2023-whats-new/">2</a>]</p>
+<h3 id="impeller-renderer-🖌️">2. <strong>Impeller Renderer</strong> 🖌️</h3>
+<p>O renderizador Impeller, que estava em versão de pré-visualização desde o Flutter 3.7, agora é o renderizador padrão no iOS no Flutter 3.10. Ele promete melhor 🚀 desempenho e redução de “jank”, proporcionando uma experiência mais suave para os usuários do iOS. [<a href="https://jweasytech.com/2023/05/13/googles-dart-3-and-flutter-3-10-bring-big-changes/">7</a>]</p>
+<h3 id="integração-com-o-dart-3-🎯">3. <strong>Integração com o Dart 3</strong> 🎯</h3>
+<p>O Flutter 3.10 está alinhado com o lançamento do Dart 3, que é uma atualização importante para a linguagem de programação Dart. Essa integração garante compatibilidade e permite que os desenvolvedores aproveitem os novos recursos e melhorias da linguagem Dart no Flutter. O Dart 3 introduz a segurança de tipos nulos (“null safety”) e outras melhorias na linguagem. [<a href="https://thenewstack.io/dev-news-dart-3-meets-wasm-flutter-3-10-and-qwik-streamable-javascript/">3</a>]</p>
+<h3 id="melhorias-de-desempenho-🏃‍♂️">4. <strong>Melhorias de Desempenho</strong> 🏃‍♂️</h3>
+<p>Antes do Flutter 3.10, o framework utilizava o mecanismo de renderização Skia, o qual às vezes resultava em pequenas interrupções durante as animações. No Flutter 3.10, foram feitas melhorias de desempenho para resolver esse problema e reduzir essas interrupções, proporcionando animações e transições mais suaves. [<a href="https://www.kodeco.com/40058907-google-i-o-2023-flutter-levels-up-to-version-3-10/">5</a>]</p>
+<h3 id="importante-📌">Importante 📌</h3>
+<p>Embora o Flutter 3.10 traga essas mudanças importantes, elas foram projetadas para melhorar o desempenho, a experiência do usuário e a compatibilidade das aplicações Flutter. Os desenvolvedores devem revisar a documentação oficial do Flutter e as notas de lançamento para obter informações mais detalhadas sobre essas mudanças e como elas podem afetar seus projetos existentes. 📖 Feliz codificação! 🚀🔥</p>
+<h2 id="dart-🚨🚧">Dart 🚨🚧</h2>
+<p>O Dart 3 trouxe várias mudanças significativas na linguagem. Aqui estão algumas das mudanças que podem <em><strong>comprometer a compatibilidade</strong></em> com versões anteriores:</p>
+<h3 id="segurança-de-null-✅">1. <strong>Segurança de Null</strong> ✅</h3>
+<p>O Dart 3 introduz a segurança de null, que permite que você especifique se uma variável pode conter um valor nulo ou não. Essa mudança requer a adição de anotações de tipos ou o uso do operador <code>?</code> para indicar que uma variável pode ser nula. [<a href="https://www.infoworld.com/article/3696353/googles-dart-3-and-flutter-310-bring-big-changes.html">1</a>] [<a href="https://jweasytech.com/2023/05/13/googles-dart-3-and-flutter-3-10-bring-big-changes/">2</a>]</p>
+<h3 id="novas-funcionalidades-da-linguagem-🚀">2. <strong>Novas Funcionalidades da Linguagem</strong> 🚀</h3>
+<p>O Dart 3 traz várias novas funcionalidades para a linguagem, como suporte a mixins explícitos, funções de colchete e inicializadores de lista condicionais. Essas funcionalidades podem exigir atualizações no código existente para seguir as novas práticas recomendadas. [<a href="https://www.infoworld.com/article/3696353/googles-dart-3-and-flutter-310-bring-big-changes.html">1</a>] [<a href="https://jweasytech.com/2023/05/13/googles-dart-3-and-flutter-3-10-bring-big-changes/">2</a>]</p>
+<h3 id="compilação-para-webassembly-wasm-🌐">3. <strong>Compilação para WebAssembly (Wasm)</strong> 🌐</h3>
+<p>O Dart 3 apresenta uma prévia da compilação para WebAssembly (Wasm), permitindo que você compile seu código Dart para ser executado em navegadores que suportam essa tecnologia. Essa mudança pode exigir ajustes no código para garantir a compatibilidade com a compilação para Wasm. [<a href="https://jweasytech.com/2023/05/13/googles-dart-3-and-flutter-3-10-bring-big-changes/">2</a>]</p>
+<h3 id="mudanças-em-pacotes-e-bibliotecas-🔧">4. <strong>Mudanças em Pacotes e Bibliotecas</strong> 🔧</h3>
+<ul>
+<li>O pacote <code>go_router</code> sofreu alterações significativas em sua API, incluindo uma mudança na forma como a configuração do roteador é feita. Agora, é possível chamar <code>MaterialApp.router</code> passando a configuração do roteador como parâmetro, em vez de usar os campos <code>RouterDelegate</code>, <code>RouteInformationParser</code> e <code>RouteInformationProvider</code> separadamente. [<a href="https://pub.dev/packages/go_router/changelog">4</a>]</li>
+<li>O pacote <code>drift</code> também passou por mudanças, incluindo a renomeação de métodos de mapeamento em type converters e a remoção de classes relacionadas a <code>SqlType</code>. Agora, para descrever o tipo de uma coluna, deve-se usar a enumeração <code>DriftSqlType</code>, e para mapear valores entre Dart e SQL, deve-se usar a classe <code>SqlTypes</code>. [<a href="https://pub.dev/packages/drift/changelog">6</a>]</li>
+</ul>
+<h3 id="mudanças-em-outras-bibliotecas-📚">5. <strong>Mudanças em Outras Bibliotecas</strong> 📚</h3>
+<ul>
+<li>A biblioteca <code>mimir</code> agora requer que todos os documentos tenham uma “primary key” explicitamente definida. A chave primária é inferida automaticamente com base em um campo que termina em “id” ou simplesmente “id”. Se houver vários campos terminando em “id”, é possível especificar o campo de chave primária usando o método <code>instance.openIndex('indexName', primaryKey: 'theActualId')</code>. O conteúdo do campo de chave primária pode ser um número ou uma string que corresponda à expressão regular <code>^[a-zA-Z0-9-_]*$</code>. [<a href="https://pub.dev/packages/mimir">7</a>]</li>
+</ul>
+<h3 id="atualizações-em-pacotes-relacionados-🔧">6. <strong>Atualizações em Pacotes Relacionados</strong> 🔧</h3>
+<ul>
+<li>O pacote <code>vm_service</code> passou por uma migração e agora está integrado ao Dart SDK. Houve uma alteração no nome do pacote de <code>package:vm_service_lib</code> para <code>package:vm_service</code>, além da adoção de um novo sistema de versionamento seguindo os padrões de versionamento semântico. [<a href="https://pub.dev/packages/vm_service/changelog">8</a>]</li>
+</ul>
+<p>É importante verificar a documentação e o changelog de cada biblioteca ou pacote específico que você está usando para identificar as mudanças que podem afetar seu código. Certifique-se de atualizar suas dependências e fazer as modificações necessárias para garantir a compatibilidade com o Dart 3. ✅📚🚀</p>
+<h3 id="vamos-codificar-🔥">Vamos codificar! 🔥</h3>
+<h1 id="🌐-web-e-desktop">🌐 <strong>Web e Desktop</strong></h1>
+<p>Com o Flutter 3.10 e o Dart 3, o suporte para desenvolvimento web e desktop continua a melhorar. Aqui estão algumas das atualizações mais significativas:</p>
+<h2 id="flutter-web-🌐">Flutter Web 🌐</h2>
+<h3 id="renderização-de-texto-aperfeiçoada">1. <strong>Renderização de Texto Aperfeiçoada</strong></h3>
+<p>O Flutter Web agora usa o CanvasKit para renderização de texto por padrão, proporcionando qualidade de texto mais nítida e melhor compatibilidade com diferentes navegadores e plataformas.</p>
+<h3 id="suporte-a-interações-de-teclado">2. <strong>Suporte a Interações de Teclado</strong></h3>
+<p>Melhorias foram feitas no suporte a interações de teclado, incluindo a adição de atalhos de teclado e navegação com a tecla Tab.</p>
+<h3 id="desempenho-aumentado">3. <strong>Desempenho Aumentado</strong></h3>
+<p>O desempenho geral do Flutter Web foi aprimorado, incluindo a velocidade de carregamento da página e a suavidade das animações.</p>
+<h2 id="flutter-desktop-🖥️">Flutter Desktop 🖥️</h2>
+<h3 id="suporte-estável-para-macos">1. <strong>Suporte Estável para macOS</strong></h3>
+<p>O suporte para macOS agora é estável! Isso significa que você pode criar aplicativos Flutter para macOS com a confiança de que eles serão compatíveis com a plataforma.</p>
+<h3 id="suporte-para-windows-e-linux-em-beta">2. <strong>Suporte para Windows e Linux em Beta</strong></h3>
+<p>O suporte para Windows e Linux ainda está em fase beta, mas está progredindo rapidamente. Fique atento para mais atualizações nesse espaço.</p>
+<h1 id="📚-recursos-de-aprendizado">📚 <strong>Recursos de Aprendizado</strong></h1>
+<p>Aprender Flutter e Dart nunca foi tão fácil. Existem muitos recursos disponíveis para ajudá-lo a se atualizar com as últimas mudanças e melhorias. Aqui estão alguns que você pode achar úteis:</p>
+<h2 id="documentação-oficial">Documentação Oficial</h2>
+<p>A documentação oficial do Flutter e do Dart é sempre o melhor lugar para começar. Ela é atualizada regularmente com as últimas mudanças e possui exemplos de código que você pode usar para se familiarizar com novos conceitos.</p>
+<h2 id="flutter-explained">Flutter Explained</h2>
+<p>O canal do YouTube Flutter Explained oferece tutoriais e explicações detalhadas sobre vários tópicos relacionados ao Flutter. É um ótimo recurso para aprender novas técnicas e acompanhar as últimas mudanças no Flutter.</p>
+<h2 id="dart-academy">Dart Academy</h2>
+<p>A Dart Academy é um recurso online gratuito que oferece cursos e tutoriais sobre a linguagem de programação Dart. É um ótimo lugar para aprender sobre as novas funcionalidades do Dart 3.</p>
+<h2 id="flutter-community">Flutter Community</h2>
+<p>A Comunidade Flutter é uma plataforma onde desenvolvedores Flutter de todo o mundo compartilham suas experiências, dúvidas e soluções. Existem várias plataformas, incluindo grupos do Facebook, Slack, Discord e fóruns online onde você pode se conectar com outros desenvolvedores Flutter.</p>
+<h2 id="livros-e-cursos">Livros e Cursos</h2>
+<p>Existem muitos livros e cursos online disponíveis que podem ajudar a aprofundar seu conhecimento em Flutter e Dart. Alguns exemplos incluem “Flutter in Action” e “The Complete Flutter Development Bootcamp with Dart” no Udemy.</p>
+<h1 id="🚀-vamos-em-frente">🚀 <strong>Vamos em Frente</strong></h1>
+<p>Com todas essas mudanças e melhorias, nunca houve um momento melhor para ser um desenvolvedor Flutter e Dart. As atualizações no Flutter 3.10 e no Dart 3 trazem melhor desempenho, novos recursos e maior flexibilidade, permitindo que você crie aplicativos mais poderosos e responsivos.</p>
+<p>Lembre-se de que, embora essas mudanças possam exigir algumas atualizações no seu código, elas foram projetadas para tornar o desenvolvimento de aplicativos mais eficiente e agradável. Então, mergulhe, explore as novidades e divirta-se codificando!</p>
+<h1 id="👨‍💻-bora-codar-📜🤖">👨‍💻 Bora codar! 📜🤖</h1>
+
+    </div>
+  </div>
+</body>
+
+</html>
